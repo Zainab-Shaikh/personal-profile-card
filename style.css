@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to left, #5e7998 60%, #d3a390);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.card {
+  background-color: white;
+  width: 28rem;
+  border-radius: 20px;
+}
+.profile-card {
+  /* height: 45%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to top right, #537a8d, #d88c77);
+  color: white;
+  border-radius: 20px 20px 0 0;
+}
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+p {
+  padding: 2rem;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 1.6rem;
+}
+svg {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: 55%; */
+  padding: 1.5rem 0;
+}
+.row1,
+.row2 {
+  width: 40%;
+}
+button {
+  background: transparent;
+  border: 1px solid gray;
+  border-radius: 50px;
+  display: block;
+  margin: 1.5rem 0;
+  padding: 0.3rem;
+  height: 2.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  text-indent: 20px;
+}
+span {
+  width: 80%;
+  display: inline-block;
+}
+@media (max-width: 416px) {
+  body {
+    height: 200vh;
+  }
+  .social-media {
+    flex-direction: column;
+  }
+  .row1,
+  .row2 {
+    width: 80%;
+  }
+  span {
+    width: 80%;
+  }
+}
+button:hover span,
+button:hover svg,
+button:hover {
+  cursor: pointer;
+  color: tomato;
+  fill: tomato;
+  border-color: tomato;
+}
